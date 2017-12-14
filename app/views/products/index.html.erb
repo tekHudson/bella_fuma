@@ -1,0 +1,31 @@
+<%# TOP NAVBAR %>
+<div class="container">
+  <% if @product.present? %>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title"><%= @product.name %></h4>
+        <p class="card-text"><%= @product.description %></p>
+      </div>
+    </div>
+  <% elsif @category.blank? %>
+    <div class="card-deck">
+      <% @categories.each do |category| %>
+        <div class="top20">
+          <%= link_to(products_path(category_id: category)) do %>
+            <%= render partial: "products/category_card", locals: { category: category } %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  <% else %>
+    <div class="card-deck">
+      <% @products.each do |product| %>
+        <div class="top20">
+          <%= link_to(products_path(product_id: product)) do %>
+            <%= render partial: "products/product_card", locals: { product: product } %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

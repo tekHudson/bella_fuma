@@ -1,0 +1,23 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light"> -->
+  <!-- <a class="navbar-brand" href="#">Products</a> -->
+<!--
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#productNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="productNav"> -->
+    <ul class="nav flex-column">
+      <%= tab("All Products", products_path, @category.blank?,
+        html_options: { li: { class: "nav-item" }, a: { class: "nav-link" } }) %>
+
+      <% @categories.each do |category| %>
+        <%= tab(category.name, products_path(category_id: category.id), @category == category,
+          html_options: { li: { class: "nav-item" }, a: { class: "nav-link" } }) %>
+      <% end %>
+
+
+      <%= tab("Create Category", new_category_path, false,
+        html_options: { li: { class: "nav-item" }, a: { class: "nav-link" } }) %>
+    </ul>
+  <!-- </div> -->
+<!-- </nav> -->
