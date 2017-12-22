@@ -30392,3 +30392,1335 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 38ms (Views: 33.4ms | ActiveRecord: 0.5ms)
 
 
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8815397155583234160)[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20171221233550)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (42.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171221233550"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8815397155583234160)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+DEPRECATION WARNING: raise_on_unfiltered_parameters is deprecated and has no effect in Rails 5.1. (called from instance_eval at /Users/thudson/.rvm/gems/ruby-2.3.3/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:69)
+Started GET "/users/sign_up" for ::1 at 2017-12-21 15:36:24 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/thudson/.rvm/gems/ruby-2.3.3/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/thudson/.rvm/gems/ruby-2.3.3/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /Users/thudson/.rvm/gems/ruby-2.3.3/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application (72.2ms)
+  Rendered common/_tab.html.erb (0.8ms)
+  Rendered common/_navbar.html.erb (3.9ms)
+Completed 200 OK in 4965ms (Views: 4930.1ms | ActiveRecord: 4.2ms)
+
+
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (199.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "newsie_development"[0m
+  [1m[35m (195.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "newsie_test"[0m
+  [1m[35m (1020.6ms)[0m  [1m[35mCREATE DATABASE "newsie_development" ENCODING = 'utf8'[0m
+  [1m[35m (612.1ms)[0m  [1m[35mCREATE DATABASE "newsie_test" ENCODING = 'utf8'[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8815397155583234160)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateArticles (20171019163017)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "articles" ("id" bigserial primary key, "title" character varying, "text" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171019163017"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateImages (20171028044724)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "images" ("id" bigserial primary key, "article_id" integer DEFAULT NULL, "product_id" integer DEFAULT NULL, "staff_id" integer DEFAULT NULL, "url" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171028044724"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProducts (20171028050524)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "category_id" integer NOT NULL, "image_id" integer, "name" character varying NOT NULL, "description" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171028050524"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCategories (20171028051424)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "categories" ("id" bigserial primary key, "name" character varying, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171028051424"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateStaffs (20171028051748)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "staffs" ("id" bigserial primary key, "name" character varying, "bio" character varying, "image_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171028051748"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20171221233550)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171221233550"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-21 23:39:56.021392"], ["updated_at", "2017-12-21 23:39:56.021392"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8815397155583234160)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (3.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "site_admin@fake.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "site_admin@fake.com"], ["encrypted_password", "$2a$11$SVDFvV636QF1/NwNe/fUHeSf6uG5UaTCCbjsmAZh9JIlXOBtAHs9C"], ["created_at", "2017-12-21 23:39:56.254009"], ["updated_at", "2017-12-21 23:39:56.254009"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "How to Have a Healthier and More Productive Home Office"], ["text", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lacus a dui mollis, in interdum sem blandit. Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros. Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem. Vestibulum gravida quis lacus at lobortis. Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet. Sed vitae mattis nibh, a blandit nunc. Sed auctor luctus velit hendrerit faucibus. Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem. Aenean non mi sed arcu consequat ullamcorper. Morbi a ultricies eros. Nulla sed massa lacus. Quisque arcu erat, feugiat et tortor nec, rhoncus vulputate purus."], ["created_at", "2017-12-21 23:39:56.271109"], ["updated_at", "2017-12-21 23:39:56.271109"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "10 Step To Successfully Outsourcing Your Online Business"], ["text", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lacus a dui mollis, in interdum sem blandit. Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros. Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem. Vestibulum gravida quis lacus at lobortis. Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet. Sed vitae mattis nibh, a blandit nunc. Sed auctor luctus velit hendrerit faucibus. Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem. Aenean non mi sed arcu consequat ullamcorper. Morbi a ultricies eros. Nulla sed massa lacus. Quisque arcu erat, feugiat et tortor nec, rhoncus vulputate purus."], ["created_at", "2017-12-21 23:39:56.274719"], ["updated_at", "2017-12-21 23:39:56.274719"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "21 Ways to Dominate Youtube: The Ultimate Guide"], ["text", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lacus a dui mollis, in interdum sem blandit. Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros. Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem. Vestibulum gravida quis lacus at lobortis. Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet. Sed vitae mattis nibh, a blandit nunc. Sed auctor luctus velit hendrerit faucibus. Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem. Aenean non mi sed arcu consequat ullamcorper. Morbi a ultricies eros. Nulla sed massa lacus. Quisque arcu erat, feugiat et tortor nec, rhoncus vulputate purus."], ["created_at", "2017-12-21 23:39:56.276223"], ["updated_at", "2017-12-21 23:39:56.276223"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "6 Instant Confidence Boosters"], ["text", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lacus a dui mollis, in interdum sem blandit. Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros. Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem. Vestibulum gravida quis lacus at lobortis. Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet. Sed vitae mattis nibh, a blandit nunc. Sed auctor luctus velit hendrerit faucibus. Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem. Aenean non mi sed arcu consequat ullamcorper. Morbi a ultricies eros. Nulla sed massa lacus. Quisque arcu erat, feugiat et tortor nec, rhoncus vulputate purus."], ["created_at", "2017-12-21 23:39:56.277782"], ["updated_at", "2017-12-21 23:39:56.277782"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Parenting Guru: From Chaos to Access"], ["text", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lacus a dui mollis, in interdum sem blandit. Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros. Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem. Vestibulum gravida quis lacus at lobortis. Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet. Sed vitae mattis nibh, a blandit nunc. Sed auctor luctus velit hendrerit faucibus. Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem. Aenean non mi sed arcu consequat ullamcorper. Morbi a ultricies eros. Nulla sed massa lacus. Quisque arcu erat, feugiat et tortor nec, rhoncus vulputate purus."], ["created_at", "2017-12-21 23:39:56.279320"], ["updated_at", "2017-12-21 23:39:56.279320"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Gene Breakthrough Restores The Sight Of People With Inherited Eye Disease And Could Save Thousands From Blindness"], ["text", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lacus a dui mollis, in interdum sem blandit. Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros. Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem. Vestibulum gravida quis lacus at lobortis. Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet. Sed vitae mattis nibh, a blandit nunc. Sed auctor luctus velit hendrerit faucibus. Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem. Aenean non mi sed arcu consequat ullamcorper. Morbi a ultricies eros. Nulla sed massa lacus. Quisque arcu erat, feugiat et tortor nec, rhoncus vulputate purus."], ["created_at", "2017-12-21 23:39:56.280805"], ["updated_at", "2017-12-21 23:39:56.280805"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Twitter Goes Public: 21 Things You Should Know"], ["text", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lacus a dui mollis, in interdum sem blandit. Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros. Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem. Vestibulum gravida quis lacus at lobortis. Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet. Sed vitae mattis nibh, a blandit nunc. Sed auctor luctus velit hendrerit faucibus. Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem. Aenean non mi sed arcu consequat ullamcorper. Morbi a ultricies eros. Nulla sed massa lacus. Quisque arcu erat, feugiat et tortor nec, rhoncus vulputate purus."], ["created_at", "2017-12-21 23:39:56.282483"], ["updated_at", "2017-12-21 23:39:56.282483"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Tips That Show Anybody How To Make Money Online – Guaranteed"], ["text", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lacus a dui mollis, in interdum sem blandit. Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros. Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem. Vestibulum gravida quis lacus at lobortis. Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet. Sed vitae mattis nibh, a blandit nunc. Sed auctor luctus velit hendrerit faucibus. Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem. Aenean non mi sed arcu consequat ullamcorper. Morbi a ultricies eros. Nulla sed massa lacus. Quisque arcu erat, feugiat et tortor nec, rhoncus vulputate purus."], ["created_at", "2017-12-21 23:39:56.284263"], ["updated_at", "2017-12-21 23:39:56.284263"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Thousands Already Make Millions Online And So Can You"], ["text", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lacus a dui mollis, in interdum sem blandit. Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros. Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem. Vestibulum gravida quis lacus at lobortis. Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet. Sed vitae mattis nibh, a blandit nunc. Sed auctor luctus velit hendrerit faucibus. Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem. Aenean non mi sed arcu consequat ullamcorper. Morbi a ultricies eros. Nulla sed massa lacus. Quisque arcu erat, feugiat et tortor nec, rhoncus vulputate purus."], ["created_at", "2017-12-21 23:39:56.286116"], ["updated_at", "2017-12-21 23:39:56.286116"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cigars"], ["description", "Nam commodo lacus a dui mollis, in interdum sem blandit."], ["created_at", "2017-12-21 23:39:56.305119"], ["updated_at", "2017-12-21 23:39:56.305119"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "601 - Blue Label Maduro"], ["description", "Vestibulum gravida quis lacus at lobortis."], ["created_at", "2017-12-21 23:39:56.337790"], ["updated_at", "2017-12-21 23:39:56.337790"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "601 - Green Label Oscuro"], ["description", "Sed vitae mattis nibh, a blandit nunc."], ["created_at", "2017-12-21 23:39:56.341529"], ["updated_at", "2017-12-21 23:39:56.341529"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "601 - La Bomba"], ["description", "Nulla sed massa lacus."], ["created_at", "2017-12-21 23:39:56.343207"], ["updated_at", "2017-12-21 23:39:56.343207"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "601 - La Bomba Limited Edition - Warhead"], ["description", "Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet."], ["created_at", "2017-12-21 23:39:56.344812"], ["updated_at", "2017-12-21 23:39:56.344812"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "601 - Red Label Habano"], ["description", "Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem."], ["created_at", "2017-12-21 23:39:56.346492"], ["updated_at", "2017-12-21 23:39:56.346492"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "601 Red Label - Guapito"], ["description", "Vestibulum gravida quis lacus at lobortis."], ["created_at", "2017-12-21 23:39:56.348191"], ["updated_at", "2017-12-21 23:39:56.348191"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "601 Red Label - Rabito"], ["description", "Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem."], ["created_at", "2017-12-21 23:39:56.349630"], ["updated_at", "2017-12-21 23:39:56.349630"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "601 Red Label - Robusto"], ["description", "Nam commodo lacus a dui mollis, in interdum sem blandit."], ["created_at", "2017-12-21 23:39:56.351383"], ["updated_at", "2017-12-21 23:39:56.351383"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "601 Red Label - Toro"], ["description", "Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros."], ["created_at", "2017-12-21 23:39:56.353156"], ["updated_at", "2017-12-21 23:39:56.353156"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "601 Red Label - Torpedo"], ["description", "Morbi a ultricies eros."], ["created_at", "2017-12-21 23:39:56.354811"], ["updated_at", "2017-12-21 23:39:56.354811"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "601 Red Label - Trabuco"], ["description", "Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros."], ["created_at", "2017-12-21 23:39:56.356637"], ["updated_at", "2017-12-21 23:39:56.356637"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Family Blend - D-3"], ["description", "Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem."], ["created_at", "2017-12-21 23:39:56.358524"], ["updated_at", "2017-12-21 23:39:56.358524"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Family Blend - T-11"], ["description", "Morbi a ultricies eros."], ["created_at", "2017-12-21 23:39:56.360351"], ["updated_at", "2017-12-21 23:39:56.360351"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Family Blend - V_R_1"], ["description", "Morbi a ultricies eros."], ["created_at", "2017-12-21 23:39:56.362027"], ["updated_at", "2017-12-21 23:39:56.362027"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Prensado - Corona Gorda"], ["description", "Aenean non mi sed arcu consequat ullamcorper."], ["created_at", "2017-12-21 23:39:56.363630"], ["updated_at", "2017-12-21 23:39:56.363630"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Prensado - Gran Toro"], ["description", "Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet."], ["created_at", "2017-12-21 23:39:56.365182"], ["updated_at", "2017-12-21 23:39:56.365182"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Prensado - Robust"], ["description", "Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet."], ["created_at", "2017-12-21 23:39:56.366800"], ["updated_at", "2017-12-21 23:39:56.366800"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus - Centuria"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["created_at", "2017-12-21 23:39:56.368469"], ["updated_at", "2017-12-21 23:39:56.368469"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus - Cero"], ["description", "Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet."], ["created_at", "2017-12-21 23:39:56.370449"], ["updated_at", "2017-12-21 23:39:56.370449"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus - Genesis"], ["description", "Morbi a ultricies eros."], ["created_at", "2017-12-21 23:39:56.372635"], ["updated_at", "2017-12-21 23:39:56.372635"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus - Imperator"], ["description", "Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros."], ["created_at", "2017-12-21 23:39:56.374443"], ["updated_at", "2017-12-21 23:39:56.374443"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus - Inceptio"], ["description", "Morbi a ultricies eros."], ["created_at", "2017-12-21 23:39:56.376504"], ["updated_at", "2017-12-21 23:39:56.376504"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus - Magistri"], ["description", "Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem."], ["created_at", "2017-12-21 23:39:56.378180"], ["updated_at", "2017-12-21 23:39:56.378180"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus - Magnus"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["created_at", "2017-12-21 23:39:56.379784"], ["updated_at", "2017-12-21 23:39:56.379784"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus - Terra Novo"], ["description", "Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem."], ["created_at", "2017-12-21 23:39:56.381504"], ["updated_at", "2017-12-21 23:39:56.381504"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus Maduro - Imperator - Cello"], ["description", "Morbi a ultricies eros."], ["created_at", "2017-12-21 23:39:56.383278"], ["updated_at", "2017-12-21 23:39:56.383278"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus Maduro - Magistri - cello"], ["description", "Vestibulum gravida quis lacus at lobortis."], ["created_at", "2017-12-21 23:39:56.384901"], ["updated_at", "2017-12-21 23:39:56.384901"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus Maduro - Terra Nova - cello"], ["description", "Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem."], ["created_at", "2017-12-21 23:39:56.386467"], ["updated_at", "2017-12-21 23:39:56.386467"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus Muduro - Centuria - cello"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["created_at", "2017-12-21 23:39:56.388060"], ["updated_at", "2017-12-21 23:39:56.388060"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 1], ["name", "Alec Bradley - Tempus Muduro - Medius - cello"], ["description", "Nam commodo lacus a dui mollis, in interdum sem blandit."], ["created_at", "2017-12-21 23:39:56.389842"], ["updated_at", "2017-12-21 23:39:56.389842"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bulk Pipe Tobacco"], ["description", "Nulla sed massa lacus."], ["created_at", "2017-12-21 23:39:56.391714"], ["updated_at", "2017-12-21 23:39:56.391714"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Almondine"], ["description", "Sed vitae mattis nibh, a blandit nunc."], ["created_at", "2017-12-21 23:39:56.393680"], ["updated_at", "2017-12-21 23:39:56.393680"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Amaretto"], ["description", "Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem."], ["created_at", "2017-12-21 23:39:56.395807"], ["updated_at", "2017-12-21 23:39:56.395807"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Aromatic English"], ["description", "Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem."], ["created_at", "2017-12-21 23:39:56.397741"], ["updated_at", "2017-12-21 23:39:56.397741"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Bahamian Rhapsody"], ["description", "Vestibulum gravida quis lacus at lobortis."], ["created_at", "2017-12-21 23:39:56.399646"], ["updated_at", "2017-12-21 23:39:56.399646"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Balkan I"], ["description", "Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros."], ["created_at", "2017-12-21 23:39:56.401381"], ["updated_at", "2017-12-21 23:39:56.401381"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Balkan II"], ["description", "Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet."], ["created_at", "2017-12-21 23:39:56.403069"], ["updated_at", "2017-12-21 23:39:56.403069"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Black Cherry"], ["description", "Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem."], ["created_at", "2017-12-21 23:39:56.404965"], ["updated_at", "2017-12-21 23:39:56.404965"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Black Cordial"], ["description", "Nulla sed massa lacus."], ["created_at", "2017-12-21 23:39:56.406951"], ["updated_at", "2017-12-21 23:39:56.406951"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Black Heath"], ["description", "Vestibulum gravida quis lacus at lobortis."], ["created_at", "2017-12-21 23:39:56.408926"], ["updated_at", "2017-12-21 23:39:56.408926"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Black Toasted Cavendish"], ["description", "Nulla sed massa lacus."], ["created_at", "2017-12-21 23:39:56.410679"], ["updated_at", "2017-12-21 23:39:56.410679"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Bright Virginia"], ["description", "Vestibulum gravida quis lacus at lobortis."], ["created_at", "2017-12-21 23:39:56.412339"], ["updated_at", "2017-12-21 23:39:56.412339"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Butter Pecan"], ["description", "Sed vitae mattis nibh, a blandit nunc."], ["created_at", "2017-12-21 23:39:56.414202"], ["updated_at", "2017-12-21 23:39:56.414202"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Buttered Rum"], ["description", "Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet."], ["created_at", "2017-12-21 23:39:56.416035"], ["updated_at", "2017-12-21 23:39:56.416035"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Byzantium"], ["description", "Vestibulum gravida quis lacus at lobortis."], ["created_at", "2017-12-21 23:39:56.417900"], ["updated_at", "2017-12-21 23:39:56.417900"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Carmello"], ["description", "Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros."], ["created_at", "2017-12-21 23:39:56.419849"], ["updated_at", "2017-12-21 23:39:56.419849"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Carolina Flake"], ["description", "Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem."], ["created_at", "2017-12-21 23:39:56.421705"], ["updated_at", "2017-12-21 23:39:56.421705"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Cherry Cavendish"], ["description", "Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem."], ["created_at", "2017-12-21 23:39:56.423589"], ["updated_at", "2017-12-21 23:39:56.423589"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Chocolate Burley"], ["description", "Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem."], ["created_at", "2017-12-21 23:39:56.425427"], ["updated_at", "2017-12-21 23:39:56.425427"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Chocolate Truffle"], ["description", "Sed vitae mattis nibh, a blandit nunc."], ["created_at", "2017-12-21 23:39:56.427328"], ["updated_at", "2017-12-21 23:39:56.427328"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Coco Cream"], ["description", "Nam commodo lacus a dui mollis, in interdum sem blandit."], ["created_at", "2017-12-21 23:39:56.429043"], ["updated_at", "2017-12-21 23:39:56.429043"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Coconut Almond"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["created_at", "2017-12-21 23:39:56.431005"], ["updated_at", "2017-12-21 23:39:56.431005"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Count Pulaski"], ["description", "Morbi a ultricies eros."], ["created_at", "2017-12-21 23:39:56.432977"], ["updated_at", "2017-12-21 23:39:56.432977"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Cream Soda"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["created_at", "2017-12-21 23:39:56.434884"], ["updated_at", "2017-12-21 23:39:56.434884"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Crown Achievement"], ["description", "Sed auctor luctus velit hendrerit faucibus."], ["created_at", "2017-12-21 23:39:56.436729"], ["updated_at", "2017-12-21 23:39:56.436729"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "CTC"], ["description", "Sed auctor luctus velit hendrerit faucibus."], ["created_at", "2017-12-21 23:39:56.438514"], ["updated_at", "2017-12-21 23:39:56.438514"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Cube Burley"], ["description", "Nulla sed massa lacus."], ["created_at", "2017-12-21 23:39:56.440527"], ["updated_at", "2017-12-21 23:39:56.440527"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Embassy"], ["description", "Sed vitae mattis nibh, a blandit nunc."], ["created_at", "2017-12-21 23:39:56.442326"], ["updated_at", "2017-12-21 23:39:56.442326"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Fox & Hound"], ["description", "Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem."], ["created_at", "2017-12-21 23:39:56.444188"], ["updated_at", "2017-12-21 23:39:56.444188"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Fruit Tart"], ["description", "Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem."], ["created_at", "2017-12-21 23:39:56.445984"], ["updated_at", "2017-12-21 23:39:56.445984"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 2], ["name", "Ginger Snaps"], ["description", "Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet."], ["created_at", "2017-12-21 23:39:56.447877"], ["updated_at", "2017-12-21 23:39:56.447877"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pipe Tobacco Tins"], ["description", "Nulla sed massa lacus."], ["created_at", "2017-12-21 23:39:56.449510"], ["updated_at", "2017-12-21 23:39:56.449510"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 3], ["name", "CAO Bella Vanilla"], ["description", "Nam commodo lacus a dui mollis, in interdum sem blandit."], ["created_at", "2017-12-21 23:39:56.451342"], ["updated_at", "2017-12-21 23:39:56.451342"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 3], ["name", "CAO Cherrybomb"], ["description", "Morbi a ultricies eros."], ["created_at", "2017-12-21 23:39:56.453929"], ["updated_at", "2017-12-21 23:39:56.453929"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 3], ["name", "CAO Eileen's Dream"], ["description", "Vestibulum gravida quis lacus at lobortis."], ["created_at", "2017-12-21 23:39:56.455930"], ["updated_at", "2017-12-21 23:39:56.455930"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 3], ["name", "CAO Moontrance"], ["description", "Aenean non mi sed arcu consequat ullamcorper."], ["created_at", "2017-12-21 23:39:56.457546"], ["updated_at", "2017-12-21 23:39:56.457546"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 3], ["name", "Dunhill Nightcap"], ["description", "Vestibulum nunc elit, blandit non pulvinar eget, luctus vitae sem."], ["created_at", "2017-12-21 23:39:56.459097"], ["updated_at", "2017-12-21 23:39:56.459097"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cigar Cutters"], ["description", "Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet."], ["created_at", "2017-12-21 23:39:56.460655"], ["updated_at", "2017-12-21 23:39:56.460655"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 4], ["name", "Xikar"], ["description", "Aenean non mi sed arcu consequat ullamcorper."], ["created_at", "2017-12-21 23:39:56.462229"], ["updated_at", "2017-12-21 23:39:56.462229"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Humidors"], ["description", "Sed vitae mattis nibh, a blandit nunc."], ["created_at", "2017-12-21 23:39:56.463865"], ["updated_at", "2017-12-21 23:39:56.463865"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 5], ["name", "Don Salvatore"], ["description", "Vivamus cursus enim vitae urna euismod, eget laoreet quam imperdiet."], ["created_at", "2017-12-21 23:39:56.465690"], ["updated_at", "2017-12-21 23:39:56.465690"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 5], ["name", "Lotus"], ["description", "Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem."], ["created_at", "2017-12-21 23:39:56.467453"], ["updated_at", "2017-12-21 23:39:56.467453"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Travel Cigar Cases"], ["description", "Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem."], ["created_at", "2017-12-21 23:39:56.469054"], ["updated_at", "2017-12-21 23:39:56.469054"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 6], ["name", "VAULT"], ["description", "Vestibulum gravida quis lacus at lobortis."], ["created_at", "2017-12-21 23:39:56.471077"], ["updated_at", "2017-12-21 23:39:56.471077"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Humidification Devices"], ["description", "Vestibulum gravida quis lacus at lobortis."], ["created_at", "2017-12-21 23:39:56.472720"], ["updated_at", "2017-12-21 23:39:56.472720"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 7], ["name", "Boveda"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["created_at", "2017-12-21 23:39:56.474566"], ["updated_at", "2017-12-21 23:39:56.474566"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 7], ["name", "Cigar Mechanic"], ["description", "Nam commodo lacus a dui mollis, in interdum sem blandit."], ["created_at", "2017-12-21 23:39:56.476503"], ["updated_at", "2017-12-21 23:39:56.476503"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 7], ["name", "Xikar"], ["description", "Morbi a ultricies eros."], ["created_at", "2017-12-21 23:39:56.478577"], ["updated_at", "2017-12-21 23:39:56.478577"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lighters"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["created_at", "2017-12-21 23:39:56.480137"], ["updated_at", "2017-12-21 23:39:56.480137"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 8], ["name", "Blazer"], ["description", "Sed vitae mattis nibh, a blandit nunc."], ["created_at", "2017-12-21 23:39:56.481723"], ["updated_at", "2017-12-21 23:39:56.481723"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 8], ["name", "iM Corona"], ["description", "Maecenas lorem nisl, molestie eu ornare in, ullamcorper eu eros."], ["created_at", "2017-12-21 23:39:56.483304"], ["updated_at", "2017-12-21 23:39:56.483304"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 8], ["name", "JetLine"], ["description", "Nulla sed massa lacus."], ["created_at", "2017-12-21 23:39:56.485138"], ["updated_at", "2017-12-21 23:39:56.485138"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 8], ["name", "Lotus"], ["description", "Sed auctor luctus velit hendrerit faucibus."], ["created_at", "2017-12-21 23:39:56.486940"], ["updated_at", "2017-12-21 23:39:56.486940"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 8], ["name", "Prometheus"], ["description", "Sed vitae mattis nibh, a blandit nunc."], ["created_at", "2017-12-21 23:39:56.488869"], ["updated_at", "2017-12-21 23:39:56.488869"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lighter Fuel"], ["description", "Sed vitae mattis nibh, a blandit nunc."], ["created_at", "2017-12-21 23:39:56.490732"], ["updated_at", "2017-12-21 23:39:56.490732"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 9], ["name", "Lotus"], ["description", "Pellentesque est odio, elementum quis diam ac, maximus tincidunt sem."], ["created_at", "2017-12-21 23:39:56.492704"], ["updated_at", "2017-12-21 23:39:56.492704"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 9], ["name", "Vector"], ["description", "Aenean non mi sed arcu consequat ullamcorper."], ["created_at", "2017-12-21 23:39:56.494985"], ["updated_at", "2017-12-21 23:39:56.494985"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 9], ["name", "Xikar"], ["description", "Sed auctor luctus velit hendrerit faucibus."], ["created_at", "2017-12-21 23:39:56.496936"], ["updated_at", "2017-12-21 23:39:56.496936"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("category_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category_id", 9], ["name", "Zippo"], ["description", "Sed auctor luctus velit hendrerit faucibus."], ["created_at", "2017-12-21 23:39:56.499025"], ["updated_at", "2017-12-21 23:39:56.499025"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+DEPRECATION WARNING: raise_on_unfiltered_parameters is deprecated and has no effect in Rails 5.1. (called from instance_eval at /Users/thudson/.rvm/gems/ruby-2.3.3/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:69)
+Started GET "/users/sign_up" for ::1 at 2017-12-21 15:44:34 -0800
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (253.4ms)
+  Rendered common/_tab.html.erb (0.3ms)
+  Rendered common/_navbar.html.erb (2.6ms)
+Completed 200 OK in 4604ms (Views: 4568.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-12-21 15:49:23 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.8ms)
+  Rendered common/_tab.html.erb (0.5ms)
+  Rendered common/_navbar.html.erb (3.7ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-12-21 15:49:26 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.3ms)
+  Rendered common/_tab.html.erb (0.3ms)
+  Rendered common/_navbar.html.erb (2.6ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-12-21 15:49:34 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.3ms)
+  Rendered common/_tab.html.erb (0.5ms)
+  Rendered common/_navbar.html.erb (3.0ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-12-21 15:50:27 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.8ms)
+  Rendered common/_tab.html.erb (0.6ms)
+  Rendered common/_navbar.html.erb (4.2ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-12-21 15:52:43 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/_carousel.html.erb (0.3ms)
+  Rendered articles/_text.html.erb (0.4ms)
+  Rendered articles/_row.html.erb (4.8ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.6ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.8ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.4ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.2ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.2ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.3ms)
+  Rendered welcome/index.html.erb within layouts/application (47.6ms)
+  Rendered common/_tab.html.erb (0.6ms)
+  Rendered common/_navbar.html.erb (4.0ms)
+Completed 200 OK in 81ms (Views: 69.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/..." for ::1 at 2017-12-21 15:52:44 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for ::1 at 2017-12-21 15:54:21 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/_carousel.html.erb (0.3ms)
+  Rendered articles/_text.html.erb (0.4ms)
+  Rendered articles/_row.html.erb (3.4ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.2ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered welcome/index.html.erb within layouts/application (29.9ms)
+  Rendered common/_navbar.html.erb (1.6ms)
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/..." for ::1 at 2017-12-21 15:54:21 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for ::1 at 2017-12-21 15:55:50 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/_carousel.html.erb (0.3ms)
+  Rendered articles/_text.html.erb (0.4ms)
+  Rendered articles/_row.html.erb (3.7ms)
+  Rendered articles/_text.html.erb (0.3ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.3ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.2ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.2ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.2ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.2ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.3ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (3.4ms)
+  Rendered welcome/index.html.erb within layouts/application (35.3ms)
+  Rendered common/_navbar.html.erb (2.3ms)
+Completed 200 OK in 68ms (Views: 66.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/..." for ::1 at 2017-12-21 15:55:50 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/users/sign_in" for ::1 at 2017-12-21 15:55:54 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.4ms)
+  Rendered common/_navbar.html.erb (2.4ms)
+Completed 200 OK in 47ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-12-21 15:55:56 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.0ms)
+  Rendered common/_navbar.html.erb (1.7ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-12-21 15:55:57 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+  Rendered common/_navbar.html.erb (1.9ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-12-21 15:56:08 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+  Rendered common/_navbar.html.erb (2.1ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-12-21 16:04:27 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: west-cost-style.
+Load paths:
+  /Users/thudson/ps/bella_fuma/app/assets/config
+  /Users/thudson/ps/bella_fuma/app/assets/fonts
+  /Users/thudson/ps/bella_fuma/app/assets/images
+  /Users/thudson/ps/bella_fuma/app/assets/javascripts
+  /Users/thudson/ps/bella_fuma/app/assets/stylesheets
+  /Users/thudson/ps/bella_fuma/vendor/assets/javascripts
+  /Users/thudson/ps/bella_fuma/vendor/assets/stylesheets
+  /Users/thudson/.rvm/gems/ruby-2.3.3/gems/holder_rails-2.9.3/vendor/assets/javascripts
+  /Users/thudson/.rvm/gems/ruby-2.3.3/gems/devise-bootstrap-views-0.0.11/app/assets/stylesheets
+  /Users/thudson/.rvm/gems/ruby-2.3.3/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/thudson/.rvm/gems/ruby-2.3.3/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/thudson/.rvm/gems/ruby-2.3.3/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/thudson/.rvm/gems/ruby-2.3.3/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/thudson/.rvm/gems/ruby-2.3.3/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/thudson/ps/bella_fuma/app/assets/fonts
+  /Users/thudson/.rvm/gems/ruby-2.3.3/gems/popper_js-1.12.5/assets/javascripts
+  /Users/thudson/.rvm/gems/ruby-2.3.3/gems/bootstrap-4.0.0.beta2.1/assets/stylesheets
+  /Users/thudson/.rvm/gems/ruby-2.3.3/gems/bootstrap-4.0.0.beta2.1/assets/javascripts
+  /Users/thudson/.rvm/gems/ruby-2.3.3/gems/bootstrap-4.0.0.beta2.1/assets/stylesheets):
+    4:     <title>Newsie</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9: 
+   10:     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
+  
+app/assets/stylesheets/application.scss:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1095503086722139334_70222976966260'
+Started GET "/users/sign_in" for ::1 at 2017-12-21 16:04:34 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+  Rendered common/_navbar.html.erb (2.3ms)
+Completed 200 OK in 2246ms (Views: 2244.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-12-21 16:05:07 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+  Rendered common/_navbar.html.erb (1.6ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-12-21 16:05:13 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered common/_navbar.html.erb (1.5ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-12-21 16:06:03 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wYCj6fK+Xlv0hRtKcwfhqocUJpCpm3XWeFvAhy8sWXmwXJ7IgAqinZT0+BFQT+/rWBQIt73YP8D0Hu/BOT0/8A==", "user"=>{"email"=>"site_admin@fake.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "site_admin@fake.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2017-12-22 00:06:03.659226"], ["last_sign_in_at", "2017-12-22 00:06:03.659226"], ["current_sign_in_ip", "::1/128"], ["last_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2017-12-22 00:06:03.661744"], ["id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:1337/
+Completed 302 Found in 180ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/" for ::1 at 2017-12-21 16:06:03 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/_carousel.html.erb (0.3ms)
+  Rendered articles/_text.html.erb (0.3ms)
+  Rendered articles/_row.html.erb (3.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (4.2ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered welcome/index.html.erb within layouts/application (31.6ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered common/_tab.html.erb (0.4ms)
+  Rendered common/_navbar.html.erb (6.0ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/..." for ::1 at 2017-12-21 16:06:03 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for ::1 at 2017-12-21 16:10:14 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/_carousel.html.erb (0.3ms)
+  Rendered articles/_text.html.erb (0.3ms)
+  Rendered articles/_row.html.erb (2.9ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_carousel.html.erb (0.3ms)
+  Rendered articles/_row.html.erb (4.4ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.3ms)
+  Rendered welcome/index.html.erb within layouts/application (31.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered common/_tab.html.erb (0.5ms)
+  Rendered common/_navbar.html.erb (5.1ms)
+Completed 200 OK in 56ms (Views: 53.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/..." for ::1 at 2017-12-21 16:10:14 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for ::1 at 2017-12-21 16:10:23 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/_carousel.html.erb (0.4ms)
+  Rendered articles/_text.html.erb (0.3ms)
+  Rendered articles/_row.html.erb (3.4ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.8ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.2ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered welcome/index.html.erb within layouts/application (29.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered common/_tab.html.erb (0.4ms)
+  Rendered common/_navbar.html.erb (4.4ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/..." for ::1 at 2017-12-21 16:10:23 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for ::1 at 2017-12-21 16:10:35 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/_carousel.html.erb (0.3ms)
+  Rendered articles/_text.html.erb (0.3ms)
+  Rendered articles/_row.html.erb (3.5ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.3ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.3ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_carousel.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.3ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.3ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered welcome/index.html.erb within layouts/application (32.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered common/_tab.html.erb (0.4ms)
+  Rendered common/_navbar.html.erb (4.6ms)
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/..." for ::1 at 2017-12-21 16:10:35 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for ::1 at 2017-12-21 16:11:20 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/_carousel.html.erb (0.3ms)
+  Rendered articles/_text.html.erb (0.3ms)
+  Rendered articles/_row.html.erb (3.3ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.8ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.8ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.8ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered welcome/index.html.erb within layouts/application (28.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered common/_tab.html.erb (0.4ms)
+  Rendered common/_navbar.html.erb (4.5ms)
+Completed 200 OK in 53ms (Views: 50.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/..." for ::1 at 2017-12-21 16:11:20 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for ::1 at 2017-12-21 16:12:10 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/_carousel.html.erb (0.2ms)
+  Rendered articles/_text.html.erb (0.3ms)
+  Rendered articles/_row.html.erb (2.8ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.8ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.4ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (1.9ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.0ms)
+  Rendered welcome/index.html.erb within layouts/application (29.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered common/_tab.html.erb (0.8ms)
+  Rendered common/_navbar.html.erb (5.3ms)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/..." for ::1 at 2017-12-21 16:12:10 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for ::1 at 2017-12-21 16:12:54 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/_carousel.html.erb (0.3ms)
+  Rendered articles/_text.html.erb (0.3ms)
+  Rendered articles/_row.html.erb (3.1ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.2ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.1ms)
+  Rendered articles/_carousel.html.erb (0.1ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (3.6ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.5ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.7ms)
+  Rendered articles/_text.html.erb (0.0ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_row.html.erb (2.6ms)
+  Rendered articles/_carousel.html.erb (0.0ms)
+  Rendered articles/_text.html.erb (0.1ms)
+  Rendered articles/_row.html.erb (2.5ms)
+  Rendered welcome/index.html.erb within layouts/application (35.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered common/_tab.html.erb (0.6ms)
+  Rendered common/_navbar.html.erb (5.1ms)
+Completed 200 OK in 65ms (Views: 62.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/..." for ::1 at 2017-12-21 16:12:54 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/thudson/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for ::1 at 2017-12-21 16:14:44 -0800
+Processing by ProductsController#index as HTML
+  [1m[36mCategory Load (2.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered products/_category_card.html.erb (0.4ms)
+  Rendered products/_category_card.html.erb (0.1ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/index.html.erb within layouts/application (20.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered common/_tab.html.erb (0.5ms)
+  Rendered common/_navbar.html.erb (21.2ms)
+Completed 200 OK in 80ms (Views: 57.7ms | ActiveRecord: 9.6ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+Started GET "/products?category_id=1" for ::1 at 2017-12-21 16:14:48 -0800
+Processing by ProductsController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (3.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 1]]
+  Rendered products/_product_card.html.erb (0.6ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.2ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.2ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/_product_card.html.erb (0.0ms)
+  Rendered products/index.html.erb within layouts/application (52.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered common/_tab.html.erb (0.4ms)
+  Rendered common/_navbar.html.erb (4.3ms)
+Completed 200 OK in 93ms (Views: 77.7ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/products?product_id=1" for ::1 at 2017-12-21 16:14:51 -0800
+Processing by ProductsController#index as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  Rendered products/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered common/_tab.html.erb (0.4ms)
+  Rendered common/_navbar.html.erb (6.5ms)
+Completed 200 OK in 33ms (Views: 26.4ms | ActiveRecord: 2.5ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/thudson/ps/bella_fuma/config/initializers/new_framework_defaults.rb:23)
+Started GET "/" for ::1 at 2017-12-21 16:20:54 -0800
+Processing by ProductsController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered products/_category_card.html.erb (0.6ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/_category_card.html.erb (0.0ms)
+  Rendered products/index.html.erb within layouts/application (19.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered common/_tab.html.erb (0.5ms)
+  Rendered common/_navbar.html.erb (41.3ms)
+Completed 200 OK in 124ms (Views: 109.6ms | ActiveRecord: 6.5ms)
+
+

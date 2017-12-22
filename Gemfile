@@ -8,12 +8,16 @@ end
 
 gem 'rails', '~> 5.1.1'
 gem 'pg'
+
+# Frontend
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
-
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'jquery-rails'
+
+gem 'devise'
+gem 'devise-bootstrap-views'
 
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'

@@ -1,6 +1,6 @@
-<nav class="navbar sticky-top navbar-expand-md  navbar-dark bg-primary">
+<nav class="navbar sticky-top navbar-expand-md">
 
-  <%= link_to image_tag("west_coast_cigars_logo.png", size: "80x40"), welcome_index_path, class: "navbar-brand" %>
+  <%= link_to image_tag("bella_fuma.jpg", size: "80x80"), welcome_index_path, class: "navbar-brand" %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -8,24 +8,20 @@
 
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <%= tab("PRODUCTS", products_path, active == "products",
-        html_options: { li: { class: "nav-item" }, a: { class: "nav-link" } }) %>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">STAFF</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">SMOKING</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">GUIDE</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">LOCATIONS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT</a>
-      </li>
+      <% if user_signed_in? %>
+        <%= tab("PRODUCTS", products_path, active == "products",
+          html_options: { li: { class: "nav-item" }, a: { class: "nav-link" } }) %>
+      <% end %>
     </ul>
+    <div class="row pull-right">
+      <% if user_signed_in? %>
+        Logged in as <strong><%= current_user.email %></strong>.
+        <%= link_to 'Edit profile', edit_user_registration_path, :class => 'nav-link' %> |
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'nav-link'  %>
+      <% else %>
+        <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link'  %> |
+        <%= link_to "Login", new_user_session_path, :class => 'nav-link'  %>
+      <% end %>
+    </div>
   </div>
 </nav>

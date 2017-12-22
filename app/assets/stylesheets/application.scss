@@ -11,10 +11,9 @@
  * It is generally better to create a new file per style scope.
  */
 
-@import "west-cost-style";
-
 /* Custom bootstrap variables must be set or imported *before* bootstrap. */
 @import "bootstrap";
+@import "devise_bootstrap_views";
 
 .container-fluid {
   padding: 0;
